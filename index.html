@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lawyer Firm - Justice & Trust</title>
+  <style>
+    body {font-family: Arial, sans-serif; margin:0; padding:0;}
+    header {background:#1a1a1a; color:white; padding:20px; text-align:center;}
+    nav {background:#333; display:flex; justify-content:center;}
+    nav a {color:white; padding:14px 20px; text-decoration:none;}
+    nav a:hover {background:#575757;}
+    .hero {background:url('law-office.jpg') center/cover no-repeat; color:white; text-align:center; padding:100px 20px;}
+    .hero h1 {font-size:48px;}
+    .section {padding:40px; max-width:1200px; margin:auto;}
+    .services {display:flex; gap:20px; flex-wrap:wrap;}
+    .card {flex:1; min-width:250px; background:#f4f4f4; padding:20px; border-radius:8px;}
+    .testimonial {background:#eaeaea; padding:20px; margin:20px 0; border-left:5px solid #333;}
+    footer {background:#1a1a1a; color:white; text-align:center; padding:20px;}
+    form {display:flex; flex-direction:column; gap:10px;}
+    input, textarea {padding:10px; border:1px solid #ccc; border-radius:5px;}
+    button {background:#333; color:white; padding:10px; border:none; border-radius:5px;}
+    button:hover {background:#575757;}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Lawyer Firm</h1>
+  <p>Justice. Integrity. Trust.</p>
+</header>
+
+<nav>
+  <a href="#about">About Us</a>
+  <a href="#services">Practice Areas</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+  <h1>Your Trusted Legal Partner</h1>
+  <p>Expertise in Criminal, Civil, and Corporate Law</p>
+  <button onclick="document.getElementById('contact').scrollIntoView()">Request Consultation</button>
+</section>
+
+<section id="about" class="section">
+  <h2>About Us</h2>
+  <p>With over 20 years of experience, our firm has represented clients in high-profile cases and everyday legal matters. We believe in transparency, dedication, and results.</p>
+</section>
+
+<section id="services" class="section">
+  <h2>Practice Areas</h2>
+  <div class="services">
+    <div class="card"><h3>Criminal Law</h3><p>Defense against charges with proven strategies.</p></div>
+    <div class="card"><h3>Family Law</h3><p>Divorce, custody, and inheritance disputes.</p></div>
+    <div class="card"><h3>Corporate Law</h3><p>Contracts, compliance, and litigation support.</p></div>
+    <div class="card"><h3>Civil Litigation</h3><p>Property disputes, damages, and settlements.</p></div>
+  </div>
+</section>
+
+<section id="testimonials" class="section">
+  <h2>Client Testimonials</h2>
+  <div class="testimonial">“They fought for me like family. Highly recommend!” – A. Sharma</div>
+  <div class="testimonial">“Professional, reliable, and compassionate.” – R. Gupta</div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2026 Lawyer Firm | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
